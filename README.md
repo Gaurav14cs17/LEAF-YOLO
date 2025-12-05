@@ -6,13 +6,13 @@
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 1.8+](https://img.shields.io/badge/PyTorch-1.8+-orange.svg)](https://pytorch.org/)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
-[![GitHub Stars](https://img.shields.io/github/stars/your_username/LEAF-YOLO?style=social)](https://github.com/your_username/LEAF-YOLO/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/your_username/LEAF-YOLO?style=social)](https://github.com/your_username/LEAF-YOLO/network)
+[![GitHub Stars](https://img.shields.io/github/stars/your_username/LEAF-YOLO?style=social)](https://github.com/Gaurav14cs17/LEAF-YOLO/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/your_username/LEAF-YOLO?style=social)](https://github.com/Gaurav14cs17/LEAF-YOLO/network)
 
 **🚁 Professional Object Detection for Drones, UAVs, and Edge Devices**
 
-[![Quick Start](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb)
-[![Complete Training](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Complete_Training.ipynb)
+[![Quick Start](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb)
+[![Complete Training](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Complete_Training.ipynb)
 
 <img src="./figure/params.png" width="60%" alt="LEAF-YOLO Performance"/>
 
@@ -90,7 +90,7 @@ conda create -n leafyolo python=3.9
 conda activate leafyolo
 
 # Clone and install
-git clone https://github.com/your_username/LEAF-YOLO.git
+git clone https://github.com/Gaurav14cs17/LEAF-YOLO.git
 cd LEAF-YOLO
 pip install -r requirements.txt
 
@@ -101,10 +101,10 @@ python leafyolo_cli.py predict --source your_image.jpg
 ### ☁️ **Google Colab (Recommended for Beginners)**
 
 **🎯 Quick Start (5 minutes)**:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb)
 
 **🏋️ Complete Training Tutorial**:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Complete_Training.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Complete_Training.ipynb)
 
 ### 🐍 **Python API**
 ```python
@@ -120,7 +120,7 @@ results = model.predict('your_image.jpg')
 model.train(data='dataset.yaml', epochs=100, device='0')
 ```
 
-**New to AI?** Start with our [**Google Colab tutorials**](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb) - no installation required! 🎓
+**New to AI?** Start with our [**Google Colab tutorials**](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb) - no installation required! 🎓
 
 ---
 
@@ -228,7 +228,7 @@ python leafyolo_cli.py info
 **Perfect for learning, experimentation, and quick prototyping!**
 
 ### 🚀 **Quick Start (5 minutes)**
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb)
 
 - ✅ **No installation required** - runs in your browser
 - ✅ **Free GPU access** - train models faster  
@@ -236,7 +236,7 @@ python leafyolo_cli.py info
 - ✅ **Interactive tutorials** - learn by doing
 
 ### 🏋️ **Complete Training Tutorial**
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Complete_Training.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Complete_Training.ipynb)
 
 **What you'll learn:**
 - 📊 **Dataset preparation** and validation
@@ -248,7 +248,7 @@ python leafyolo_cli.py info
 ### 🛠️ **Colab Setup Script**
 ```python
 # Quick setup for any Colab notebook
-!wget https://raw.githubusercontent.com/your_username/LEAF-YOLO/main/colab_setup.py
+!wget https://raw.githubusercontent.com/Gaurav14cs17/LEAF-YOLO/main/colab_setup.py
 !python colab_setup.py
 
 # Now you can use LEAF-YOLO!
@@ -376,8 +376,8 @@ model.export(
 
 ### 💬 Need Help?
 - 📖 **Start here**: Read the folder README files  
-- 🐛 **Found a bug?**: [Open an issue](https://github.com/your_username/LEAF-YOLO/issues)
-- 💡 **Have ideas?**: [Start a discussion](https://github.com/your_username/LEAF-YOLO/discussions)
+- 🐛 **Found a bug?**: [Open an issue](https://github.com/Gaurav14cs17/LEAF-YOLO/issues)
+- 💡 **Have ideas?**: [Start a discussion](https://github.com/Gaurav14cs17/LEAF-YOLO/discussions)
 - 📧 **Direct contact**: your.email@example.com
 
 ### 🎯 Quick Troubleshooting
