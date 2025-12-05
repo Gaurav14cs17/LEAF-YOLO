@@ -271,6 +271,6 @@ results = model.predict('image.jpg', img_size=320)
 
 *Ready to build amazing AI applications with LEAF-YOLO?*
 
-[![Quick Start](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/examples/notebooks/LEAF_YOLO_Quick_Start.ipynb)
+[![Quick Start](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/examples/notebooks/LEAF_YOLO_Quick_Start.ipynb)
 
 </div>
