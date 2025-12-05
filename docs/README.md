@@ -85,9 +85,9 @@ This documentation is organized into several categories:
 
 Help us improve the documentation:
 
-1. **Found an error?** [Open an issue](https://github.com/your_username/LEAF-YOLO/issues)
+1. **Found an error?** [Open an issue](https://github.com/Gaurav14cs17/LEAF-YOLO/issues)
 2. **Want to add content?** Check our [Contributing Guide](contributing.md)
-3. **Have suggestions?** [Start a discussion](https://github.com/your_username/LEAF-YOLO/discussions)
+3. **Have suggestions?** [Start a discussion](https://github.com/Gaurav14cs17/LEAF-YOLO/discussions)
 
 ---
 

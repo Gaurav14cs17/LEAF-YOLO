@@ -15,8 +15,8 @@ All README files have been **optimized for excellent GitHub readability** with p
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 1.8+](https://img.shields.io/badge/PyTorch-1.8+-orange.svg)](https://pytorch.org/)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
-[![GitHub Stars](https://img.shields.io/github/stars/your_username/LEAF-YOLO?style=social)](https://github.com/your_username/LEAF-YOLO/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/your_username/LEAF-YOLO?style=social)](https://github.com/your_username/LEAF-YOLO/network)
+[![GitHub Stars](https://img.shields.io/github/stars/Gaurav14cs17/LEAF-YOLO?style=social)](https://github.com/Gaurav14cs17/LEAF-YOLO/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/Gaurav14cs17/LEAF-YOLO?style=social)](https://github.com/Gaurav14cs17/LEAF-YOLO/network)
 ```
 
 #### **Navigation Badges for Sub-README Files**

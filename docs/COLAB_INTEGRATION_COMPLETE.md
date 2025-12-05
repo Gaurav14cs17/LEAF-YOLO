@@ -11,7 +11,7 @@ Your LEAF-YOLO project now has **comprehensive Google Colab integration** with c
 ### 📓 **Interactive Jupyter Notebooks**
 
 #### 1. **LEAF_YOLO_Quick_Start.ipynb** - 5-Minute Quick Start
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb)
 
 **Perfect for**: First-time users, testing pre-trained models, quick experiments
 
@@ -24,7 +24,7 @@ Your LEAF-YOLO project now has **comprehensive Google Colab integration** with c
 - ✅ Model export for deployment
 
 #### 2. **LEAF_YOLO_Complete_Training.ipynb** - Full Training Tutorial  
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Complete_Training.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Complete_Training.ipynb)
 
 **Perfect for**: Learning AI training, custom datasets, research projects
 
@@ -42,7 +42,7 @@ Your LEAF-YOLO project now has **comprehensive Google Colab integration** with c
 #### 1. **colab_setup.py** - Automated Environment Setup
 ```python
 # Quick setup for any Colab notebook
-!wget https://raw.githubusercontent.com/your_username/LEAF-YOLO/main/colab_setup.py
+!wget https://raw.githubusercontent.com/Gaurav14cs17/LEAF-YOLO/main/colab_setup.py
 !python colab_setup.py
 ```
 
@@ -111,10 +111,10 @@ Your LEAF-YOLO project now has **comprehensive Google Colab integration** with c
 ### ☁️ **Google Colab (Recommended for Beginners)**
 
 **🎯 Quick Start (5 minutes)**:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb)
 
 **🏋️ Complete Training Tutorial**:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Complete_Training.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Complete_Training.ipynb)
 
 **New to AI?** Start with our Google Colab tutorials - no installation required! 🎓
 ```
@@ -365,4 +365,4 @@ Your LEAF-YOLO project now provides **world-class accessibility** through Google
 This integration transforms LEAF-YOLO from a local development tool into a **globally accessible AI platform** that can teach, inspire, and empower users worldwide! 🌍✨
 
 **Ready to share with the world?** Users just need to click:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb)

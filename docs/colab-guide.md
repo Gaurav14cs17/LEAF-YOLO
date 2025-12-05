@@ -16,7 +16,7 @@ Complete guide for using LEAF-YOLO in Google Colab - no local installation requi
 ### Option 1: Ready-to-Use Notebooks (Recommended)
 
 #### 🎯 **Instant Object Detection** (5 minutes)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb)
 
 **Perfect for**: First-time users, testing pre-trained models, quick experiments
 
@@ -27,7 +27,7 @@ Complete guide for using LEAF-YOLO in Google Colab - no local installation requi
 - Export models for deployment
 
 #### 🏋️ **Complete Training Tutorial** (30-60 minutes)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Complete_Training.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Complete_Training.ipynb)
 
 **Perfect for**: Learning AI training, custom datasets, research projects
 
@@ -49,7 +49,7 @@ Complete guide for using LEAF-YOLO in Google Colab - no local installation requi
 #### Step 2: Quick Setup
 ```python
 # Install LEAF-YOLO in one cell
-!git clone https://github.com/your_username/LEAF-YOLO.git
+!git clone https://github.com/Gaurav14cs17/LEAF-YOLO.git
 %cd LEAF-YOLO
 !pip install -r requirements.txt
 
@@ -78,7 +78,7 @@ for filename in uploaded.keys():
 
 ```python
 # 1. Setup
-!git clone https://github.com/your_username/LEAF-YOLO.git
+!git clone https://github.com/Gaurav14cs17/LEAF-YOLO.git
 %cd LEAF-YOLO
 !pip install -r requirements.txt
 
@@ -109,7 +109,7 @@ for filename in uploaded.keys():
 
 ```python
 # 1. Setup Environment
-!git clone https://github.com/your_username/LEAF-YOLO.git
+!git clone https://github.com/Gaurav14cs17/LEAF-YOLO.git
 %cd LEAF-YOLO
 !pip install -r requirements.txt
 
@@ -413,13 +413,13 @@ print(f"Contents: {os.listdir(dataset_path) if os.path.exists(dataset_path) else
 ## 🎓 **Learning Resources**
 
 ### **Beginner Path**
-1. Start with [Quick Start Notebook](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb)
+1. Start with [Quick Start Notebook](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb)
 2. Try uploading your own images
 3. Experiment with different model variants
 4. Learn about confidence thresholds
 
 ### **Intermediate Path**  
-1. Use [Complete Training Tutorial](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Complete_Training.ipynb)
+1. Use [Complete Training Tutorial](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Complete_Training.ipynb)
 2. Prepare your own dataset
 3. Train a custom model
 4. Understand training metrics
@@ -433,8 +433,8 @@ print(f"Contents: {os.listdir(dataset_path) if os.path.exists(dataset_path) else
 ## 🤝 **Getting Help**
 
 - 📖 **Documentation**: Check README files in each directory
-- 🐛 **Issues**: [GitHub Issues](https://github.com/your_username/LEAF-YOLO/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/your_username/LEAF-YOLO/discussions)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/Gaurav14cs17/LEAF-YOLO/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/Gaurav14cs17/LEAF-YOLO/discussions)
 - 🎓 **Tutorials**: Start with the Colab notebooks above
 
 ## 💡 **Pro Tips**
@@ -449,4 +449,4 @@ print(f"Contents: {os.listdir(dataset_path) if os.path.exists(dataset_path) else
 
 **Ready to start?** Click on one of the Colab notebook links above and begin your LEAF-YOLO journey! 🚀
 
-[![Quick Start](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb) [![Complete Tutorial](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/LEAF_YOLO_Complete_Training.ipynb)
+[![Quick Start](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Quick_Start.ipynb) [![Complete Tutorial](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/LEAF_YOLO_Complete_Training.ipynb)
