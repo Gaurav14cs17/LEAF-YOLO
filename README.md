@@ -418,7 +418,7 @@ Check out each folder's README for contribution guidelines!
 This project is licensed under the Apache 2.0 License - use it freely in your projects!
 
 ### 🎓 Citation
-If LEAF-YOLO helps your research or project, please cite our paper:
+If LEAF-YOLO helps your research or project, please cite this  paper:
 
 ```bibtex
 @article{NGHIEM2025200484,
