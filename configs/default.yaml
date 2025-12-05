@@ -1,0 +1,182 @@
+# LEAF-YOLO Universal Configuration
+# Adaptive configuration for all tasks: detect, segment, classify
+
+# Model Configuration
+nc: 80  # number of classes
+ch: 3   # number of input channels  
+depth_multiple: 1.0  # model depth multiple
+width_multiple: 1.0  # layer channel multiple
+
+# Task Configuration (auto-detected or explicitly set)
+task: 'detect'  # Task type: 'detect', 'segment', 'classify'
+
+# Anchors (for detection)
+anchors:
+  - [10,13, 16,30, 33,23]  # P3/8
+  - [30,61, 62,45, 59,119]  # P4/16
+  - [116,90, 156,198, 373,326]  # P5/32
+
+# Backbone
+backbone:
+  # [from, number, module, args]
+  [[-1, 1, Conv, [64, 6, 2, 2]],  # 0-P1/2
+   [-1, 1, Conv, [128, 3, 2]],    # 1-P2/4
+   [-1, 3, C3, [128]],
+   [-1, 1, Conv, [256, 3, 2]],    # 3-P3/8
+   [-1, 6, C3, [256]],
+   [-1, 1, Conv, [512, 3, 2]],    # 5-P4/16
+   [-1, 9, C3, [512]],
+   [-1, 1, Conv, [1024, 3, 2]],   # 7-P5/32
+   [-1, 3, C3, [1024]],
+   [-1, 1, SPPF, [1024, 5]],      # 9
+  ]
+
+# Head (task-specific)
+# Detection Head
+head_detect:
+  [[-1, 1, Conv, [512, 1, 1]],
+   [-1, 1, nn.Upsample, [None, 2, 'nearest']],
+   [[-1, 6], 1, Concat, [1]],  # cat backbone P4
+   [-1, 3, C3, [512, False]],  # 13
+
+   [-1, 1, Conv, [256, 1, 1]],
+   [-1, 1, nn.Upsample, [None, 2, 'nearest']],
+   [[-1, 4], 1, Concat, [1]],  # cat backbone P3
+   [-1, 3, C3, [256, False]],  # 17 (P3/8-small)
+
+   [-1, 1, Conv, [256, 3, 2]],
+   [[-1, 14], 1, Concat, [1]],  # cat head P4
+   [-1, 3, C3, [512, False]],  # 20 (P4/16-medium)
+
+   [-1, 1, Conv, [512, 3, 2]],
+   [[-1, 10], 1, Concat, [1]],  # cat head P5
+   [-1, 3, C3, [1024, False]],  # 23 (P5/32-large)
+
+   [[17, 20, 23], 1, Detect, [nc, anchors]],  # Detect(P3, P4, P5)
+  ]
+
+# Segmentation Head  
+head_segment:
+  [[-1, 1, Conv, [512, 1, 1]],
+   [-1, 1, nn.Upsample, [None, 2, 'nearest']],
+   [[-1, 6], 1, Concat, [1]],
+   [-1, 3, C3, [512, False]],
+
+   [-1, 1, Conv, [256, 1, 1]],
+   [-1, 1, nn.Upsample, [None, 2, 'nearest']],
+   [[-1, 4], 1, Concat, [1]],
+   [-1, 3, C3, [256, False]],
+
+   [-1, 1, Conv, [256, 3, 2]],
+   [[-1, 14], 1, Concat, [1]],
+   [-1, 3, C3, [512, False]],
+
+   [-1, 1, Conv, [512, 3, 2]],
+   [[-1, 10], 1, Concat, [1]],
+   [-1, 3, C3, [1024, False]],
+
+   [[17, 20, 23], 1, Segment, [nc, anchors, 32]],  # Segment(P3, P4, P5)
+  ]
+
+# Classification Head
+head_classify:
+  [[-1, 1, nn.AdaptiveAvgPool2d, [1]],  # Adaptive pooling
+   [-1, 1, nn.Flatten, []],
+   [-1, 1, nn.Linear, [nc]],  # Classification layer
+  ]
+
+# Task-specific configurations
+tasks:
+  detect:
+    head: head_detect
+    loss: 'DetectionLoss'
+    metrics: ['precision', 'recall', 'mAP50', 'mAP50-95']
+    export_formats: ['onnx', 'tensorrt', 'coreml', 'tflite']
+    
+  segment:
+    head: head_segment  
+    loss: 'SegmentationLoss'
+    metrics: ['box_mAP', 'mask_mAP', 'precision', 'recall']
+    export_formats: ['onnx', 'tensorrt', 'coreml']
+    
+  classify:
+    head: head_classify
+    loss: 'CrossEntropyLoss'
+    metrics: ['accuracy', 'top5_accuracy']
+    export_formats: ['onnx', 'tensorrt', 'coreml', 'tflite']
+
+# Training Hyperparameters
+hyp:
+  lr0: 0.01  # initial learning rate
+  lrf: 0.01  # final OneCycleLR learning rate (lr0 * lrf)
+  momentum: 0.937  # SGD momentum/Adam beta1
+  weight_decay: 0.0005  # optimizer weight decay
+  warmup_epochs: 3.0  # warmup epochs
+  warmup_momentum: 0.8  # warmup initial momentum
+  warmup_bias_lr: 0.1  # warmup initial bias lr
+  box: 0.05  # box loss gain
+  cls: 0.5  # cls loss gain
+  cls_pw: 1.0  # cls BCELoss positive_weight
+  obj: 1.0  # obj loss gain (scale with pixels)
+  obj_pw: 1.0  # obj BCELoss positive_weight
+  iou_t: 0.20  # IoU training threshold
+  anchor_t: 4.0  # anchor-multiple threshold
+  fl_gamma: 0.0  # focal loss gamma
+  hsv_h: 0.015  # image HSV-Hue augmentation (fraction)
+  hsv_s: 0.7  # image HSV-Saturation augmentation (fraction)
+  hsv_v: 0.4  # image HSV-Value augmentation (fraction)
+  degrees: 0.0  # image rotation (+/- deg)
+  translate: 0.1  # image translation (+/- fraction)
+  scale: 0.5  # image scale (+/- gain)
+  shear: 0.0  # image shear (+/- deg)
+  perspective: 0.0  # image perspective (+/- fraction)
+  flipud: 0.0  # image flip up-down (probability)
+  fliplr: 0.5  # image flip left-right (probability)
+  mosaic: 1.0  # image mosaic (probability)
+  mixup: 0.0  # image mixup (probability)
+  copy_paste: 0.0  # segment copy-paste (probability)
+
+# Dataset paths (can be overridden)
+datasets:
+  coco:
+    train: 'datasets/coco/train2017.txt'
+    val: 'datasets/coco/val2017.txt'
+    test: 'datasets/coco/test-dev2017.txt'
+    nc: 80
+    names: ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light',
+           'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
+           'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee',
+           'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard',
+           'tennis racket', 'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple',
+           'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch',
+           'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone',
+           'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase', 'scissors', 'teddy bear',
+           'hair drier', 'toothbrush']
+           
+  visdrone:
+    train: 'datasets/visdrone/train.txt'
+    val: 'datasets/visdrone/val.txt'
+    nc: 10
+    names: ['pedestrian', 'people', 'bicycle', 'car', 'van', 'truck', 'tricycle', 'awning-tricycle', 'bus', 'motor']
+
+# Model variants
+variants:
+  leafyolo_n:  # Nano
+    depth_multiple: 0.33
+    width_multiple: 0.25
+    
+  leafyolo_s:  # Small  
+    depth_multiple: 0.33
+    width_multiple: 0.50
+    
+  leafyolo_m:  # Medium
+    depth_multiple: 0.67
+    width_multiple: 0.75
+    
+  leafyolo_l:  # Large
+    depth_multiple: 1.0
+    width_multiple: 1.0
+    
+  leafyolo_x:  # Extra Large
+    depth_multiple: 1.33
+    width_multiple: 1.25
