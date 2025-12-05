@@ -1,0 +1,69 @@
+# LEAF-YOLO Requirements - Professional Implementation
+# Usage: pip install -r requirements.txt
+
+# Base PyTorch Ecosystem ----------------------------------------
+torch>=1.8.0,!=1.12.0         # PyTorch deep learning framework
+torchvision>=0.9.0,!=0.13.0   # PyTorch computer vision
+numpy>=1.18.5,<2.0.0          # Array operations
+
+# Computer Vision & Image Processing -------------------------
+opencv-python>=4.1.2          # OpenCV for image/video processing
+Pillow>=7.1.2                  # PIL image library
+scipy>=1.4.1                   # Scientific computing
+
+# Data Handling & Utilities ---------------------------------
+PyYAML>=5.3.1                 # YAML configuration files
+pandas>=1.1.4                  # Data manipulation
+requests>=2.23.0               # HTTP requests
+tqdm>=4.41.0                   # Progress bars
+
+# Machine Learning & Visualization ---------------------------
+matplotlib>=3.2.2              # Plotting and visualization
+seaborn>=0.11.0                # Statistical visualization
+scikit-learn>=0.24.0          # Machine learning utilities
+
+# Model Components -------------------------------------------
+timm>=0.6.2                   # PyTorch Image Models (for DropPath)
+
+# Training & Logging -----------------------------------------
+tensorboard>=2.4.1            # TensorBoard logging
+wandb>=0.12.0                  # Weights & Biases experiment tracking
+
+# Export & Deployment ----------------------------------------
+onnx>=1.10.0                   # ONNX model export
+onnx-simplifier>=0.4.0        # ONNX model optimization
+
+# Evaluation & Metrics --------------------------------------
+pycocotools>=2.0              # COCO dataset evaluation
+albumentations>=1.0.3         # Advanced data augmentation
+
+# System & Performance ---------------------------------------
+psutil                         # System utilization monitoring
+thop                           # FLOPs computation
+
+# Development & Jupyter --------------------------------------
+ipython                        # Interactive Python shell
+notebook                       # Jupyter notebook support
+
+# Optional Dependencies (uncomment if needed) ---------------
+# ultralytics                  # Ultralytics utilities
+# roboflow                     # Roboflow dataset integration
+# clearml                      # ClearML experiment tracking
+# comet-ml                     # Comet ML experiment tracking
+
+# Export Format Support (optional) --------------------------
+# coremltools>=6.0            # Apple CoreML export
+# openvino-dev                # Intel OpenVINO export  
+# tensorflowjs                # TensorFlow.js export
+# tensorflow>=2.4.0          # TensorFlow export
+
+# Platform Specific (uncomment if needed) -------------------
+# For Apple Silicon (M1/M2) Macs:
+# --extra-index-url https://download.pytorch.org/whl/cpu
+
+# For CUDA 11.8 (uncomment and adjust for your CUDA version):
+# --extra-index-url https://download.pytorch.org/whl/cu118
+
+# Note: Some packages may have version conflicts. 
+# If you encounter issues, try installing with:
+# pip install -r requirements.txt --upgrade --force-reinstall
