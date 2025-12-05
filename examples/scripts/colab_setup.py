@@ -115,7 +115,7 @@ def setup_leafyolo():
         print("📥 Cloning LEAF-YOLO repository...")
         subprocess.run([
             "git", "clone", 
-            "https://github.com/your_username/LEAF-YOLO.git"
+            "https://github.com/Gaurav14cs17/LEAF-YOLO.git"
         ], check=True, capture_output=True)
         
         # Change to LEAF-YOLO directory

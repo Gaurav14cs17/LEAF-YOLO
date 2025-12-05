@@ -29,10 +29,10 @@
 
 <table>
 <tr>
-<td width="50%">
+<td width="33%">
 
 **📘 [Quick Start Notebook](notebooks/LEAF_YOLO_Quick_Start.ipynb)**
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/examples/notebooks/LEAF_YOLO_Quick_Start.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/examples/notebooks/LEAF_YOLO_Quick_Start.ipynb)
 
 Perfect for beginners:
 - ✅ 5-minute setup
@@ -42,10 +42,10 @@ Perfect for beginners:
 - ✅ Export models
 
 </td>
-<td width="50%">
+<td width="33%">
 
 **📙 [Complete Training Tutorial](notebooks/LEAF_YOLO_Complete_Training.ipynb)**
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/examples/notebooks/LEAF_YOLO_Complete_Training.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/examples/notebooks/LEAF_YOLO_Complete_Training.ipynb)
 
 Full training pipeline:
 - ✅ Dataset preparation
@@ -55,8 +55,39 @@ Full training pipeline:
 - ✅ Export & deployment
 
 </td>
+<td width="33%">
+
+**🚀 [Ultra-Lightweight Training](notebooks/LEAF_YOLO_Ultra_Lightweight_Training.ipynb)**
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/examples/notebooks/LEAF_YOLO_Ultra_Lightweight_Training.ipynb)
+
+**Sub-1MB model training:**
+- ✅ **Every step documented**
+- ✅ **All functions tested**
+- ✅ **Ultra-lightweight components**
+- ✅ **Open-source dataset**
+- ✅ **Complete pipeline**
+
+</td>
 </tr>
 </table>
+
+### 🚀 **NEW: Ultra-Lightweight Training (Sub-1MB)**
+
+**The most comprehensive YOLO training tutorial ever created!**
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/examples/notebooks/LEAF_YOLO_Ultra_Lightweight_Training.ipynb)
+
+**🎯 What makes it special:**
+- **📝 Every single step documented** - No step is skipped
+- **🧪 Every function tested** - Each component verified individually
+- **📊 Complete dataset preparation** - COCO subset with synthetic labels
+- **🏗️ Architecture deep dive** - GhostConv, MicroAttention, etc.
+- **🏋️ Full training pipeline** - Loss, optimizer, scheduler testing
+- **📈 Comprehensive evaluation** - Benchmarking and optimization
+- **📦 Multi-format export** - PyTorch, ONNX, TensorRT, quantized
+- **🎯 Sub-1MB target** - True ultra-lightweight achievement
+
+**Perfect for:** Researchers, developers, students who want to understand every detail of creating ultra-efficient models.
 
 ### 📚 **Local Jupyter Examples**
 
@@ -66,6 +97,7 @@ Browse the `notebooks/` directory for:
 - 📊 **Data Analysis** notebooks
 - 🔧 **Configuration** examples
 - 📈 **Performance Analysis** tools
+- 🚀 **Ultra-Lightweight** model development
 
 ---
 
@@ -103,7 +135,7 @@ python examples/scripts/export_examples.py --model best.pt --formats onnx tflite
 ## 🚀 **Quick Start**
 
 ### **Option 1: Google Colab (Recommended)**
-1. Click [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/LEAF-YOLO/blob/main/examples/notebooks/LEAF_YOLO_Quick_Start.ipynb)
+1. Click [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gaurav14cs17/LEAF-YOLO/blob/main/examples/notebooks/LEAF_YOLO_Quick_Start.ipynb)
 2. Run all cells
 3. Upload your image
 4. See results in 5 minutes!
@@ -180,17 +212,23 @@ print('✅ Detection complete!')
 <details>
 <summary><strong>🚀 Advanced Path (1-2 weeks)</strong></summary>
 
-1. **🔧 Customize**: Model architecture
+1. **🏗️ Ultra-Lightweight Mastery**: [Ultra-Lightweight Training Tutorial](notebooks/LEAF_YOLO_Ultra_Lightweight_Training.ipynb)
+   - Master ultra-efficient architectures
+   - Build sub-1MB models from scratch
+   - Test every component individually
+   - Deploy on extreme edge devices
+
+2. **🔧 Customize**: Model architecture
    - Modify neural network components
    - Implement custom loss functions
    - Experiment with new ideas
 
-2. **📊 Benchmark**: Performance
+3. **📊 Benchmark**: Performance
    - Compare with other models
    - Optimize for specific hardware
    - Measure real-world performance
 
-3. **🤝 Contribute**: To the project
+4. **🤝 Contribute**: To the project
    - Add new features
    - Improve documentation
    - Share your improvements
@@ -259,8 +297,8 @@ results = model.predict('image.jpg', img_size=320)
 - [🧪 Testing](../tests/README.md) - Testing and validation
 
 ### 🤝 **Community**
-- [GitHub Discussions](https://github.com/your_username/LEAF-YOLO/discussions) - Ask questions
-- [Issues](https://github.com/your_username/LEAF-YOLO/issues) - Report bugs
+- [GitHub Discussions](https://github.com/Gaurav14cs17/LEAF-YOLO/discussions) - Ask questions
+- [Issues](https://github.com/Gaurav14cs17/LEAF-YOLO/issues) - Report bugs
 - [Contributing](../docs/contributing.md) - How to contribute
 
 ---
