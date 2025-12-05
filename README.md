@@ -378,7 +378,7 @@ model.export(
 - 📖 **Start here**: Read the folder README files  
 - 🐛 **Found a bug?**: [Open an issue](https://github.com/Gaurav14cs17/LEAF-YOLO/issues)
 - 💡 **Have ideas?**: [Start a discussion](https://github.com/Gaurav14cs17/LEAF-YOLO/discussions)
-- 📧 **Direct contact**: gourav14cs17.email@example.com
+- 📧 **Direct contact**: gourav14cs17@gmail.com
 
 ### 🎯 Quick Troubleshooting
 
